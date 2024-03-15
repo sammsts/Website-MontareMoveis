@@ -15,9 +15,10 @@ const Footer = () => {
 		<Box>
 			<h1
 				style={{
-					color: "blue",
+					color: "white",
 					textAlign: "center",
 					marginTop: "10px",
+					marginBottom: "20px"
 				}}
 			>
 				Montare Móveis - Fabricação e Montagens
@@ -25,7 +26,7 @@ const Footer = () => {
 			<FooterContainer>
 				<Row>
 					<Column>
-						<Heading>About Us</Heading>
+						<Heading>Sobre nós</Heading>
 						<FooterLink href="#">
 							Aim
 						</FooterLink>
@@ -37,7 +38,7 @@ const Footer = () => {
 						</FooterLink>
 					</Column>
 					<Column>
-						<Heading>Services</Heading>
+						<Heading>Serviços</Heading>
 						<FooterLink href="#">
 							Writing
 						</FooterLink>
@@ -52,7 +53,7 @@ const Footer = () => {
 						</FooterLink>
 					</Column>
 					<Column>
-						<Heading>Contact Us</Heading>
+						<Heading>Contate-nos</Heading>
 						<FooterLink href="#">
 							Uttar Pradesh
 						</FooterLink>
@@ -67,7 +68,7 @@ const Footer = () => {
 						</FooterLink>
 					</Column>
 					<Column>
-						<Heading>Social Media</Heading>
+						<Heading>Redes Sociais</Heading>
 						<FooterLink href="#">
 							<i className="fab fa-facebook-f">
 								<span
