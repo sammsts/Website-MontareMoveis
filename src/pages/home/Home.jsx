@@ -1,8 +1,12 @@
+import '../../ui/styles/globals.css'
+import './style.css'
+import Testimonials from '../../ui/components/testimonials/Testimonials';
+
 const Home = () => {
   
     return (
-        <div>
-            <p>HOME</p>
+        <div className="container">
+            <Testimonials />
         </div>
     );
   };

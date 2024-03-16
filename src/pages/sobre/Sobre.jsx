@@ -1,7 +1,10 @@
+import '../../ui/styles/globals.css'
+import './style.css'
+
 const Sobre = () => {
   
     return (
-        <div>
+        <div className="container">
             <p>SOBRE</p>
         </div>
     );

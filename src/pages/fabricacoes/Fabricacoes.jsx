@@ -1,7 +1,10 @@
+import '../../ui/styles/globals.css'
+import './style.css'
+
 const Fabricacoes = () => {
   
     return (
-        <div>
+        <div className='container'>
             <p>FABRICAÇÕES</p>
         </div>
     );

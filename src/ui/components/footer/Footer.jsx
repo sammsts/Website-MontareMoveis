@@ -116,6 +116,16 @@ const Footer = () => {
 					</Column>
 				</Row>
 			</FooterContainer>
+			<h1
+				style={{
+					color: "white",
+					textAlign: "center",
+					marginTop: "10px",
+					marginBottom: "20px"
+				}}
+			>
+				© Todos os direitos reservados - Montare Móveis 2024
+			</h1>
 		</Box>
 	);
 };
