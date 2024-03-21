@@ -1,0 +1,24 @@
+.btn-gabarito {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: none;
+    background: #000000;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  .btn-gabarito:hover,
+  .btn-gabarito:focus {
+      color: #000000;
+      background: #e7611a;
+      border: 1px solid #e7611a;
+      text-shadow: 0 0 5px #696868, 0 0 10px #ffffff, 0 0 20px #ffffff;
+      box-shadow: 0 0 5px #452705, 0 0 20px #452705, 0 0 50px #452705, 0 0 100px #452705;
+  }

@@ -4,18 +4,19 @@ export default function Testimonials() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <img className="mx-auto h-12" src="/img/logo-title-removebg-preview.png" alt="logo-title-montaremoveis" />
+          <img className="mx-auto h-12" src="/img/logo-title.png" alt="logo-title-montaremoveis" />
           <figure className="mt-10">
             <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
               <p>
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+                “Cada móvel que montei e fabriquei foi um passo na minha jornada. Cada peça é um reflexo da minha dedicação 
+                e paixão. Como CEO, entendo que cada desafio é uma oportunidade para criar algo único e personalizado. 
+                A montagem e fabricação de móveis me ensinaram a ver além do comum, a imaginar o extraordinário.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
               <img
                 className="mx-auto h-10 w-10 rounded-full"
-                src="/img/profile-ceo.jpg"
+                src="/img/profile-ceo.png"
                 alt=""
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
