@@ -6,10 +6,13 @@ import Header from './ui/components/header/Header';
 import Footer from './ui/components/footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const currentDate = new Date();
+const yearFooter = currentDate.toLocaleDateString('pt-BR', { year: 'numeric' });
+
 root.render(
   <React.StrictMode>
     <Header />
     <App />
-    <Footer />
+    <Footer yearFooter={yearFooter} />
   </React.StrictMode>
 );

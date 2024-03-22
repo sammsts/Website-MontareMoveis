@@ -6,7 +6,7 @@ const links = [
   ]
   const stats = [
     { name: 'Escritório em SÂ - RS', value: '1' },
-    { name: 'Anos de experiência', value: '+20' },
+    { name: 'Anos de experiência', value: '+30' },
     { name: 'Ano no mercado', value: '+1' },
     { name: 'Em primeiro lugar', value: 'Prazo e cuidado' },
   ]
