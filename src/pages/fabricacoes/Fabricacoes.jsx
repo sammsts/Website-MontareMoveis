@@ -1,12 +1,11 @@
 import '../../ui/styles/globals.css'
 import './style.css'
+import InstaFeed from '../../ui/components/instafeed/InstaFeed';
 
 const Fabricacoes = () => {
   
     return (
-        <div className='container'>
-            <p>FABRICAÇÕES</p>
-        </div>
+        <InstaFeed />
     );
   };
 export default Fabricacoes;
