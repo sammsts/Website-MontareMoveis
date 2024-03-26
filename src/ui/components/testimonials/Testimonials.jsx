@@ -1,4 +1,3 @@
-import LogoClouds from "../logoclouds/LogoClouds";
 import CtaSections from "../ctasections/CtaSections";
 
 export default function Testimonials() {

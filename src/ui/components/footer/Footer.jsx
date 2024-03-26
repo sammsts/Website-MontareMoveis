@@ -28,10 +28,10 @@ const Footer = ({ yearFooter }) => {
 						<FooterLink href="sobre">
 							Sobre a empresa
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="dadospublicos">
 							Dados públicos
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="informacoes">
 							Informações
 						</FooterLink>
 					</Column>
@@ -40,13 +40,13 @@ const Footer = ({ yearFooter }) => {
 						<FooterLink href="fabricacoes">
 							Fabricações
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="montagens">
 							Montagens
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="manutencao">
 							Manutenção
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="restauracao">
 							Restauração
 						</FooterLink>
 					</Column>

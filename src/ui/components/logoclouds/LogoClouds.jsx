@@ -7,7 +7,7 @@ export default function LogoClouds() {
           <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
             Parcerias
           </h2>
-          <a href="https://www.instagram.com/gabarito_engdesign/" target="_blank">
+          <a href="https://www.instagram.com/gabarito_engdesign/" target="_blank" rel="noreferrer">
             <button 
               className="mx-auto grid justify-items-center text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br"
             >
