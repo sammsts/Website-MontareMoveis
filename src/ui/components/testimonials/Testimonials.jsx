@@ -1,5 +1,5 @@
-import LogoClouds from "../logoclouds/LogoClouds"
-import CtaSections from "../ctasections/CtaSections"
+import LogoClouds from "../logoclouds/LogoClouds";
+import CtaSections from "../ctasections/CtaSections";
 
 export default function Testimonials() {
     return (
@@ -18,9 +18,9 @@ export default function Testimonials() {
             </blockquote>
             <figcaption className="mt-10">
               <img
-                className="mx-auto h-10 w-10 rounded-full"
-                src="/img/profile-ceo.png"
-                alt=""
+                className="mx-auto h-12 w-12 rounded-full"
+                src="/img/profile-ceo2.png"
+                alt="João Neto - CEO"
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
                 <div className="font-semibold text-gray-900">João Neto</div>
