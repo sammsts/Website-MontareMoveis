@@ -4,7 +4,7 @@ import './style.css'
 const Sobre = () => {
   
     return (
-        <div className="container">
+        <div>
             <p>SOBRE</p>
         </div>
     );

@@ -4,7 +4,7 @@ import './style.css'
 const Contato = () => {
   
     return (
-        <div className="container">
+        <div>
             <p>CONTATO</p>
         </div>
     );

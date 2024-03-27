@@ -9,11 +9,11 @@
     padding: 1rem;
   }
   
-  .item {
-    border-radius: 1rem;
-    overflow: hidden;
-    transition: 0.4s;
-  }
+.item {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.4s;
+}
   
   .item img, video {
     max-width: 100%;
@@ -23,4 +23,4 @@
   
   .item:hover {
     filter: brightness(1.3);
-  }
+   }
