@@ -9,7 +9,11 @@ module.exports = {
       filename: 'bundle.css'
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'location-orange': '#b86527',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio')
