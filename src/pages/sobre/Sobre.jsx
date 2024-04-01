@@ -27,7 +27,12 @@ const Sobre = () => {
                     <img src="/img/location.png" alt="location" className="size-3/5"/>
                 </div>
             </a>
-
+            <div className="pt-20 flex">
+                <h1 className="text-5xl font-bold font-sans">Transformação sob medida para o seu espaço</h1>
+            </div>
+            <div className="pt-20 pb-20 flex w-6/12">
+                <h3 className="text-xl text-center font-sans text-gray-500">Na Montare Móveis, nós moldamos sonhos em realidade. Se você imagina um ambiente renovado, nós somos a carpintaria artística que irá guiar cada detalhe, entregando não apenas móveis, mas experiências personalizadas e um serviço que entende suas necessidades.</h3>
+            </div>
         </div>
     );
   };
