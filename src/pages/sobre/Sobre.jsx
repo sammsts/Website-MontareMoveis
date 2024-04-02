@@ -41,7 +41,7 @@ const Sobre = () => {
                 <h3 className="text-xl text-center font-sans text-gray-500">Na Montare Móveis, nós moldamos sonhos em realidade. Se você imagina um ambiente renovado, nós somos a carpintaria artística que irá guiar cada detalhe, entregando não apenas móveis, mas experiências personalizadas e um serviço que entende suas necessidades.</h3>
             </div>
             <div className="flex justify-evenly w-11/12 pb-20">
-                <div className="w-2/5 py-5 px-5 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),gray)] hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] transition duration-300 ease-in-out rounded-lg">
+                <div className="w-2/5 py-5 px-5 bg-slate-100 shadow-2xl hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] transition duration-300 ease-in-out rounded-lg">
                     <div className="flex items-center">
                         <img src="/img/valores-icon.png" alt="compromisso-icon" className="w-12 pr-2" />
                         <h1 className="font-mono text-2xl font-bold">Princípios</h1>
@@ -61,7 +61,7 @@ const Sobre = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="w-2/5 py-5 px-5 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),gray)] hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] hover:duration-300 rounded-lg">
+                <div className="w-2/5 py-5 px-5 bg-slate-100 shadow-2xl hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] hover:duration-300 rounded-lg">
                     <div className="flex items-center">
                         <img src="/img/compromisso-icon.png" alt="compromisso-icon" className="w-12 pr-2" />
                         <h1 className="font-mono text-2xl font-bold">Compromisso</h1>
