@@ -16,6 +16,24 @@ const Sobre = () => {
       reset: true,
     });
 
+    ScrollReveal().reveal('.scroll-effect-title-orange', {
+      origin: 'top',
+      distance: '20px',
+      duration: 1000,
+      delay: 220,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+
+    ScrollReveal().reveal('.scroll-effect-title-principios', {
+      origin: 'top',
+      distance: '20px',
+      duration: 1000,
+      delay: 220,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+
     ScrollReveal().reveal('.scroll-effect-subtitle', {
       origin: 'top',
       distance: '20px',
@@ -25,7 +43,34 @@ const Sobre = () => {
       reset: true,
     });
 
+    ScrollReveal().reveal('.scroll-effect-subtitle-principios', {
+      origin: 'top',
+      distance: '20px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+
+    ScrollReveal().reveal('.scroll-effect-subtitle-final', {
+      origin: 'top',
+      distance: '20px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+
     ScrollReveal().reveal('.scroll-effect-img', {
+      origin: 'left',
+      distance: '200px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+
+    ScrollReveal().reveal('.scroll-effect-img-orange', {
       origin: 'left',
       distance: '200px',
       duration: 1000,
@@ -86,18 +131,18 @@ const Sobre = () => {
           <a href="https://www.google.com/maps/place/Santo+%C3%82ngelo,+RS/@-28.3204105,-54.2382789,12.02z/data=!4m6!3m5!1s0x94fe9091a97f35f1:0x5f576c0ad8e18ca8!8m2!3d-28.3001866!4d-54.2658317!16zL20vMGI0cjN5?entry=ttu" 
             target="_blank" rel="noreferrer" className="flex justify-center items-center md:w-3/5">
             <div className="size-11/12 px-5 py-5">
-              <img src="/img/location.png" alt="location" className="scroll-effect-img"/>
+              <img src="/img/location.png" alt="location" className="scroll-effect-img-orange"/>
             </div>
           </a>
-          <div className="size-3/5 px-5 py-5 pr-6 md:pr-60 scroll-effect-title">
+          <div className="size-3/5 px-5 py-5 pr-6 md:pr-60 scroll-effect-title-orange">
             <h1 className="text-white font-mono text-lg md:text-4xl font-bold tracking-wide text-center">Atualmente atuamos no munícipio de <span className="normal-case hover:uppercase hover:underline underline-offset-8 hover:decoration-sky-500">Santo Ângelo</span> e <span className="normal-case hover:uppercase hover:underline underline-offset-8 hover:decoration-sky-500">regiões próximas</span></h1>
           </div>
         </div>
       </div>
-      <div className="pt-6 md:pt-20 flex scroll-effect-title">
+      <div className="pt-6 md:pt-20 flex scroll-effect-title-principios">
         <h1 className="text-3xl md:text-5xl font-bold font-sans text-center">Transformação sob medida para o seu espaço</h1>
       </div>
-      <div className="pt-6 md:pt-10 pb-12 md:pb-20 flex w-10/12 md:w-6/12 scroll-effect-subtitle">
+      <div className="pt-6 md:pt-10 pb-12 md:pb-20 flex w-10/12 md:w-6/12 scroll-effect-subtitle-principios">
         <h3 className="text-lg md:text-xl text-center font-sans text-gray-500">Na Montare Móveis, nós moldamos sonhos em realidade. Se você imagina um ambiente renovado, nós somos a carpintaria artística que irá guiar cada detalhe, entregando não apenas móveis, mas experiências personalizadas e um serviço que entende suas necessidades.</h3>
       </div>
       <div className="w-11/12 md:w-10/12 pb-6 md:pb-20">
@@ -144,7 +189,7 @@ const Sobre = () => {
         <div className="pt-6 md:pt-20 flex scroll-effect-title">
           <h1 className="text-3xl md:text-5xl font-bold font-sans text-center">Em um mundo repleto de escolhas, nossa missão é esculpir a simplicidade</h1>
         </div>
-        <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12 scroll-effect-subtitle">
+        <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12 scroll-effect-subtitle-final">
           <h3 className="text-lg md:text-xl text-center font-sans text-gray-500">Quando os espaços parecem sobrecarregados, nós da Montare Móveis estamos prontos para descomplicar. Se o cotidiano é um emaranhado, com nossos móveis planejados, tudo se torna harmonioso.</h3>
         </div>
       </div>
@@ -152,7 +197,7 @@ const Sobre = () => {
         <div className="pt-6 md:pt-20 flex scroll-effect-title">
           <h1 className="text-3xl md:text-5xl text-slate-50 font-bold font-sans text-center">Venha construir o futuro com a Montare Móveis</h1>
         </div>
-        <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12 scroll-effect-subtitle">
+        <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12 scroll-effect-subtitle-final">
           <h3 className="text-lg md:text-xl text-slate-50	text-center font-sans text-gray-500">Você tem paixão por design e inovação? Junte-se à nossa equipe e ajude a transformar espaços em histórias de sucesso.</h3>
         </div>
         <div className="z-10 box scroll-effect-btn">
