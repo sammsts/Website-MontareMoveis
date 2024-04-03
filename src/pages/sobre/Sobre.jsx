@@ -130,19 +130,19 @@ const Sobre = () => {
         <div className="flex justify-evenly items-center">
           <a href="https://www.google.com/maps/place/Santo+%C3%82ngelo,+RS/@-28.3204105,-54.2382789,12.02z/data=!4m6!3m5!1s0x94fe9091a97f35f1:0x5f576c0ad8e18ca8!8m2!3d-28.3001866!4d-54.2658317!16zL20vMGI0cjN5?entry=ttu" 
             target="_blank" rel="noreferrer" className="flex justify-center items-center md:w-3/5">
-            <div className="size-11/12 px-5 py-5">
-              <img src="/img/location.png" alt="location" className="scroll-effect-img-orange"/>
+            <div className="scroll-effect-img-orange size-11/12 px-5 py-5">
+              <img src="/img/location.png" alt="location"/>
             </div>
           </a>
-          <div className="size-3/5 px-5 py-5 pr-6 md:pr-60 scroll-effect-title-orange">
+          <div className="scroll-effect-title-orange size-3/5 px-5 py-5 pr-6 md:pr-60">
             <h1 className="text-white font-mono text-lg md:text-4xl font-bold tracking-wide text-center">Atualmente atuamos no munícipio de <span className="normal-case hover:uppercase hover:underline underline-offset-8 hover:decoration-sky-500">Santo Ângelo</span> e <span className="normal-case hover:uppercase hover:underline underline-offset-8 hover:decoration-sky-500">regiões próximas</span></h1>
           </div>
         </div>
       </div>
-      <div className="pt-6 md:pt-20 flex scroll-effect-title-principios">
+      <div className="scroll-effect-title-principios pt-6 md:pt-20 flex">
         <h1 className="text-3xl md:text-5xl font-bold font-sans text-center">Transformação sob medida para o seu espaço</h1>
       </div>
-      <div className="pt-6 md:pt-10 pb-12 md:pb-20 flex w-10/12 md:w-6/12 scroll-effect-subtitle-principios">
+      <div className="scroll-effect-subtitle-principios pt-6 md:pt-10 pb-12 md:pb-20 flex w-10/12 md:w-6/12">
         <h3 className="text-lg md:text-xl text-center font-sans text-gray-500">Na Montare Móveis, nós moldamos sonhos em realidade. Se você imagina um ambiente renovado, nós somos a carpintaria artística que irá guiar cada detalhe, entregando não apenas móveis, mas experiências personalizadas e um serviço que entende suas necessidades.</h3>
       </div>
       <div className="w-11/12 md:w-10/12 pb-6 md:pb-20">
@@ -186,7 +186,7 @@ const Sobre = () => {
         </div>
       </div>
       <div className="grid justify-items-center w-full mb-20 bg-slate-100">
-        <div className="pt-6 md:pt-20 flex scroll-effect-title">
+        <div className="scroll-effect-title-final pt-6 md:pt-20 flex">
           <h1 className="text-3xl md:text-5xl font-bold font-sans text-center">Em um mundo repleto de escolhas, nossa missão é esculpir a simplicidade</h1>
         </div>
         <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12 scroll-effect-subtitle-final">
@@ -194,7 +194,7 @@ const Sobre = () => {
         </div>
       </div>
       <div className="grid justify-items-center rounded-lg w-10/12 pb-20 mb-20 bg-zinc-950 shadow-2xl">
-        <div className="pt-6 md:pt-20 flex scroll-effect-title">
+        <div className="pt-6 md:pt-20 flex scroll-effect-title-final">
           <h1 className="text-3xl md:text-5xl text-slate-50 font-bold font-sans text-center">Venha construir o futuro com a Montare Móveis</h1>
         </div>
         <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12 scroll-effect-subtitle-final">
