@@ -1,5 +1,6 @@
 import '../../ui/styles/globals.css'
 import './style.css'
+import { isMobile } from 'react-device-detect';
 
 const Sobre = () => {
   return (
@@ -40,41 +41,43 @@ const Sobre = () => {
       <div className="pt-6 md:pt-10 pb-12 md:pb-20 flex w-10/12 md:w-6/12">
         <h3 className="text-lg md:text-xl text-center font-sans text-gray-500">Na Montare Móveis, nós moldamos sonhos em realidade. Se você imagina um ambiente renovado, nós somos a carpintaria artística que irá guiar cada detalhe, entregando não apenas móveis, mas experiências personalizadas e um serviço que entende suas necessidades.</h3>
       </div>
-      <div className="flex justify-evenly w-11/12 md:w-10/12 pb-6 md:pb-20">
-        <div className="w-2/5 py-3 md:py-5 px-4 md:px-5 bg-slate-100 shadow-2xl hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] transition duration-300 ease-in-out rounded-lg">
-          <div className="flex items-center">
-            <img src="/img/valores-icon.png" alt="compromisso-icon" className="w-10 pr-2" />
-            <h1 className="font-mono text-lg md:text-2xl font-bold">Princípios</h1>
+      <div className="w-11/12 md:w-10/12 pb-6 md:pb-20">
+        <div className={`${isMobile ? 'grid justify-center' : 'flex justify-evenly'}`}>
+          <div className={`${isMobile ? 'mb-5' : 'w-2/5 py-3 px-4'}  bg-slate-100 shadow-2xl hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] transition duration-300 ease-in-out rounded-lg`}>
+            <div className="flex items-center">
+              <img src="/img/valores-icon.png" alt="compromisso-icon" className="w-10 pr-2" />
+              <h1 className="font-mono text-lg md:text-2xl font-bold">Princípios</h1>
+            </div>
+            <div className="pt-3 md:pt-5">
+              <ul className="space-y-2">
+                <li><b>Qualidade Artesanal:</b> Comprometimento com a excelência em cada peça produzida;</li>
+                <li><b>Personalização:</b> Cada projeto é único e adaptado às necessidades e desejos do cliente;</li>
+                <li><b>Inovação:</b> Busca constante por novas técnicas e materiais que elevem o padrão dos móveis planejados;</li>
+                <li><b>Sustentabilidade:</b> Responsabilidade ambiental no uso de recursos e processos de fabricação;</li>
+                <li><b>Integridade:</b> Transparência e honestidade em todas as interações e transações;</li>
+                <li><b>Respeito:</b> Valorização das pessoas, desde os colaboradores até os clientes e parceiros;</li>
+                <li><b>Comprometimento:</b> Dedicação total aos projetos e à satisfação do cliente;</li>
+                <li><b>Excelência no Atendimento:</b> Atendimento humanizado que entende e atende às expectativas dos clientes;</li>
+                <li><b>Durabilidade:</b> Criação de móveis que resistam ao tempo, tanto em estilo quanto em funcionalidade;</li>
+                <li><b>Comunidade:</b> Engajamento com a comunidade local e contribuição para o seu desenvolvimento;</li>
+              </ul>
+            </div>
           </div>
-          <div className="pt-3 md:pt-5">
-            <ul className="space-y-2">
-              <li><b>Qualidade Artesanal:</b> Comprometimento com a excelência em cada peça produzida;</li>
-              <li><b>Personalização:</b> Cada projeto é único e adaptado às necessidades e desejos do cliente;</li>
-              <li><b>Inovação:</b> Busca constante por novas técnicas e materiais que elevem o padrão dos móveis planejados;</li>
-              <li><b>Sustentabilidade:</b> Responsabilidade ambiental no uso de recursos e processos de fabricação;</li>
-              <li><b>Integridade:</b> Transparência e honestidade em todas as interações e transações;</li>
-              <li><b>Respeito:</b> Valorização das pessoas, desde os colaboradores até os clientes e parceiros;</li>
-              <li><b>Comprometimento:</b> Dedicação total aos projetos e à satisfação do cliente;</li>
-              <li><b>Excelência no Atendimento:</b> Atendimento humanizado que entende e atende às expectativas dos clientes;</li>
-              <li><b>Durabilidade:</b> Criação de móveis que resistam ao tempo, tanto em estilo quanto em funcionalidade;</li>
-              <li><b>Comunidade:</b> Engajamento com a comunidade local e contribuição para o seu desenvolvimento;</li>
-            </ul>
-          </div>
-        </div>
-        <div className="w-2/5 py-3 md:py-5 px-4 md:px-5 bg-slate-100 shadow-2xl hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] hover:duration-300 rounded-lg">
-          <div className="flex items-center">
-            <img src="/img/compromisso-icon.png" alt="compromisso-icon" className="w-10 pr-2" />
-            <h1 className="font-mono text-lg md:text-2xl font-bold">Compromisso</h1>
-          </div>
-          <div className="pt-3 md:pt-5">
-            <p className="indent-8 text-sm md:text-base md:text-justify">Na Montare Móveis, comprometemo-nos com a excelência e a satisfação do cliente, oferecendo um serviço personalizado que transforma visões em realidade, criando móveis que contam histórias e criam lares.</p>
-          </div>
-          <div className="flex items-center pt-8 md:pt-12">
-            <img src="/img/grafico-icon.png" alt="grafico-icon" className="w-10 pr-2" />
-            <h1 className="font-mono text-lg md:text-2xl font-bold">Consideração</h1>
-          </div>
-          <div className="pt-3 md:pt-5">
-            <p className="indent-8 text-sm md:text-base md:text-justify">Buscamos ser líderes em inovação e qualidade no design de móveis planejados, inspirando o setor com criatividade e compromisso com a sustentabilidade, para criar espaços que reflitam a identidade de cada cliente e contribuam para um mundo mais belo e personalizado.</p>
+          <div className={`${isMobile ? '' : 'w-2/5 py-3 px-4'} bg-slate-100 shadow-2xl hover:-translate-y-1 hover:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] hover:duration-300 rounded-lg`}>
+            <div className="flex items-center">
+              <img src="/img/compromisso-icon.png" alt="compromisso-icon" className="w-10 pr-2" />
+              <h1 className="font-mono text-lg md:text-2xl font-bold">Compromisso</h1>
+            </div>
+            <div className="pt-3 md:pt-5">
+              <p className="indent-8 text-sm md:text-base md:text-justify">Na Montare Móveis, comprometemo-nos com a excelência e a satisfação do cliente, oferecendo um serviço personalizado que transforma visões em realidade, criando móveis que contam histórias e criam lares.</p>
+            </div>
+            <div className="flex items-center pt-8 md:pt-12">
+              <img src="/img/grafico-icon.png" alt="grafico-icon" className="w-10 pr-2" />
+              <h1 className="font-mono text-lg md:text-2xl font-bold">Consideração</h1>
+            </div>
+            <div className="pt-3 md:pt-5">
+              <p className="indent-8 text-sm md:text-base md:text-justify">Buscamos ser líderes em inovação e qualidade no design de móveis planejados, inspirando o setor com criatividade e compromisso com a sustentabilidade, para criar espaços que reflitam a identidade de cada cliente e contribuam para um mundo mais belo e personalizado.</p>
+            </div>
           </div>
         </div>
       </div>
