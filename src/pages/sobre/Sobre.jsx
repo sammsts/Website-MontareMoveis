@@ -4,6 +4,7 @@ import './style.css'
 import { isMobile } from 'react-device-detect';
 import { Link } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
+import ScrollToTop from "react-scroll-to-top";
 
 const Sobre = () => {
   useEffect(() => {
@@ -170,6 +171,7 @@ const Sobre = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop smooth color="black" width="40" height="35" />
     </div>
   );
 };
