@@ -1,8 +1,3 @@
-.scroll-effect-title, .scroll-effect-subtitle, .scroll-effect-img, .scroll-effect-btn, .scroll-effect-ctn-principios, .scroll-effect-ctn-compromisso-consideracao {
-    visibility: hidden;
-}
-
-
 .box {
     --clr-shadow__border: #d1832a;
     --clr-text: #F6F4EB;

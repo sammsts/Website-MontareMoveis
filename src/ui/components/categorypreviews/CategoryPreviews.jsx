@@ -1,3 +1,6 @@
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
+
 const callouts = [
     {
       name: 'Imagens',
@@ -16,16 +19,35 @@ const callouts = [
   ]
   
   export default function CategoryPreviews() {
+    useEffect(() => {
+      ScrollReveal().reveal('.scroll-effect-fabricacoes-txt', {
+        origin: 'left',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+      
+      ScrollReveal().reveal('.scroll-effect-fabricacoes-img', {
+        origin: 'right',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+    }, []);
+
     return (
       <div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-2xl font-bold text-gray-900">Fabricações</h2>
-  
+            <h2 className="scroll-effect-fabricacoes-txt text-2xl font-bold text-gray-900">Fabricações</h2>
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative">
-                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                  <div className="scroll-effect-fabricacoes-img relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                     {callout.imageSrc.endsWith('.mp4') ? 
                         <video autoPlay loop>
                             <source src={callout.imageSrc} type="video/mp4" />
@@ -39,12 +61,12 @@ const callouts = [
                     }
                   </div>
                   <h3 className="mt-6 text-sm text-gray-500">
-                    <a href={callout.href}>
+                    <a href={callout.href} className="scroll-effect-fabricacoes-txt">
                       <span className="absolute inset-0" />
                       {callout.name}
                     </a>
                   </h3>
-                  <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                  <p className="scroll-effect-fabricacoes-txt text-base font-semibold text-gray-900">{callout.description}</p>
                 </div>
               ))}
             </div>

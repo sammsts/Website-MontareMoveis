@@ -1,4 +1,36 @@
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
+
 export default function CtaSections() {
+    useEffect(() => {
+      ScrollReveal().reveal('.scroll-effect-testimonials-text', {
+        origin: 'left',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+
+      ScrollReveal().reveal('.scroll-effect-testimonials-text-btn', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+
+      ScrollReveal().reveal('.scroll-effect-testimonials-img', {
+        origin: 'right',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+    }, []);
+
     return (
       <div>
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -17,19 +49,19 @@ export default function CtaSections() {
               </defs>
             </svg>
             <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h2 className="scroll-effect-testimonials-text text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Conheça nossos parceiros.
               </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
+              <p className="scroll-effect-testimonials-text mt-6 text-lg leading-8 text-gray-300">
                 A parceria com outras empresas/prestadores de serviços é sempre bem-vinda, entre em contato conosco.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <div className="scroll-effect-testimonials-text-btn mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                 <a href="parceiros" className="text-sm font-semibold leading-6 text-white">
                   Parceiros <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
-            <div className="relative mt-16 h-80 lg:mt-8">
+            <div className="scroll-effect-testimonials-img relative mt-16 h-80 lg:mt-8">
               <img
                 className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src="/img/parceiros-ctasections.png"

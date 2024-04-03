@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
 import '../../ui/styles/globals.css'
 import './style.css'
+import { useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Link } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
-import ScrollToTop from "react-scroll-to-top";
 
 const Sobre = () => {
   useEffect(() => {
@@ -12,7 +11,7 @@ const Sobre = () => {
       origin: 'top',
       distance: '20px',
       duration: 1000,
-      delay: 300,
+      delay: 220,
       easing: 'ease-in-out',
       reset: true,
     });
@@ -171,7 +170,6 @@ const Sobre = () => {
           </div>
         </div>
       </div>
-      <ScrollToTop smooth color="black" width="40" height="35" />
     </div>
   );
 };

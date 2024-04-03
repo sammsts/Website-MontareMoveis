@@ -3,7 +3,6 @@ import './style.css'
 import CategoryPreviews from '../../ui/components/categorypreviews/CategoryPreviews';
 
 const Fabricacoes = () => {
-  
     return (
       <div>
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />

@@ -1,5 +1,7 @@
 import { XMarkIcon } from '@heroicons/react/20/solid';
 import { useState } from 'react';
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
 
 export default function Banners() {
   const [isBannerVisible, setIsBannerVisible] = useState(true);
@@ -8,10 +10,20 @@ export default function Banners() {
     setIsBannerVisible(false);
   };
 
+  useEffect(() => {
+    ScrollReveal().reveal('.scroll-effect-banners', {
+      origin: 'top',
+      distance: '20px',
+      duration: 1000,
+      delay: 220,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+  }, []);
 
   return (
     <>
-    {isBannerVisible && (<div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+    {isBannerVisible && (<div className="scroll-effect-banners relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
       <div
         className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
         aria-hidden="true"
