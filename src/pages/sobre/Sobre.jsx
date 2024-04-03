@@ -19,8 +19,8 @@ const Sobre = () => {
     ScrollReveal().reveal('.scroll-effect-title-orange', {
       origin: 'top',
       distance: '20px',
-      duration: 1000,
-      delay: 220,
+      duration: 2000,
+      delay: 320,
       easing: 'ease-in-out',
       reset: true,
     });
