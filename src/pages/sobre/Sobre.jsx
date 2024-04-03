@@ -1,6 +1,7 @@
 import '../../ui/styles/globals.css'
 import './style.css'
 import { isMobile } from 'react-device-detect';
+import { Link } from 'react-router-dom';
 
 const Sobre = () => {
   return (
@@ -78,6 +79,36 @@ const Sobre = () => {
             <div className="pt-3 md:pt-5">
               <p className="indent-8 text-sm md:text-base md:text-justify">Buscamos ser líderes em inovação e qualidade no design de móveis planejados, inspirando o setor com criatividade e compromisso com a sustentabilidade, para criar espaços que reflitam a identidade de cada cliente e contribuam para um mundo mais belo e personalizado.</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="grid justify-items-center w-full mb-20 bg-slate-100">
+        <div className="pt-6 md:pt-20 flex">
+          <h1 className="text-3xl md:text-5xl font-bold font-sans text-center">Em um mundo repleto de escolhas, nossa missão é esculpir a simplicidade</h1>
+        </div>
+        <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12">
+          <h3 className="text-lg md:text-xl text-center font-sans text-gray-500">Quando os espaços parecem sobrecarregados, nós da Montare Móveis estamos prontos para descomplicar. Se o cotidiano é um emaranhado, com nossos móveis planejados, tudo se torna harmonioso.</h3>
+        </div>
+      </div>
+      <div className="grid justify-items-center rounded-lg w-10/12 pb-20 mb-20 bg-zinc-950 shadow-2xl">
+        <div className="pt-6 md:pt-20 flex">
+          <h1 className="text-3xl md:text-5xl text-slate-50 font-bold font-sans text-center">Venha construir o futuro com a Montare Móveis</h1>
+        </div>
+        <div className="pt-6 md:pt-10 pb-12 md:pb-20 w-10/12 md:w-6/12">
+          <h3 className="text-lg md:text-xl text-slate-50	text-center font-sans text-gray-500">Você tem paixão por design e inovação? Junte-se à nossa equipe e ajude a transformar espaços em histórias de sucesso.</h3>
+        </div>
+        <div className="z-10 box">
+          <Link to="/contato">
+            <button className={`button ${isMobile ? 'w-64' : ''}`}>Faça parte da nossa equipe</button>
+          </Link>
+          <div className="space">
+            <span style={{ "--i": 31 }} className="star"></span>
+            <span style={{ "--i": 12 }} className="star"></span>
+            <span style={{ "--i": 57 }} className="star"></span>
+            <span style={{ "--i": 93 }} className="star"></span>
+            <span style={{ "--i": 23 }} className="star"></span>
+            <span style={{ "--i": 70 }} className="star"></span>
+            <span style={{ "--i": 6 }} className="star"></span>
           </div>
         </div>
       </div>
