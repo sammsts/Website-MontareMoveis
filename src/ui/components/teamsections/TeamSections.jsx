@@ -1,5 +1,7 @@
-import CarouselCircular from '../carousel/Carousel'
 import './style.css'
+import CarouselCircular from '../carousel/Carousel'
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
 
 const people = [
   {
@@ -11,11 +13,31 @@ const people = [
 ]
   
 export default function TeamSections() {
+  useEffect(() => {
+    ScrollReveal().reveal('.scroll-effect-parceiros-txt', {
+      origin: 'left',
+      distance: '20px',
+      duration: 1000,
+      delay: 220,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+
+    ScrollReveal().reveal('.scroll-effect-parceiros-img', {
+      origin: 'right',
+      distance: '20px',
+      duration: 1000,
+      delay: 220,
+      easing: 'ease-in-out',
+      reset: true,
+    });
+  }, []);
+
   return (
     <div className="py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl text-black items-center justify-between grid xl:grid-cols-2">
         <div className="mx-auto grid gap-x-8 gap-y-20 px-6 lg:px-8 ">
-          <div className="max-w-2xl">
+          <div className="scroll-effect-parceiros-txt max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Gabarito</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Engenharia elétrica e Design de interiores; <br />
@@ -23,7 +45,7 @@ export default function TeamSections() {
                 CREA 252020
               </p>
           </div>
-          <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+          <ul className="scroll-effect-parceiros-img grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
             {people.map((person) => (
               <li key={person.name}>
                 <div className="flex items-center gap-x-6">
@@ -37,7 +59,7 @@ export default function TeamSections() {
             ))}
           </ul>
           <a href="https://www.instagram.com/gabarito_engdesign/" target="_blank" rel="noreferrer">
-            <div className="flex items-center justify-between">
+            <div className="scroll-effect-parceiros-txt flex items-center justify-between">
               <button className="cta flex items-center">
                 <span className="hover-underline-animation"> Conheça </span>
                 <svg
@@ -59,7 +81,7 @@ export default function TeamSections() {
             </div>
           </a>
         </div>
-        <div className="mx-auto w-full">
+        <div className="scroll-effect-parceiros-img mx-auto w-full">
           <CarouselCircular />
         </div>
       </div>
