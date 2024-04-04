@@ -34,6 +34,9 @@ const Footer = ({ yearFooter }) => {
 						<FooterLink href="informacoes">
 							Informações
 						</FooterLink>
+						<FooterLink href="parceiros">
+							Parceiros
+						</FooterLink>
 					</Column>
 					<Column>
 						<Heading>Serviços</Heading>
