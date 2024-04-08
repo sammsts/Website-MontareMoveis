@@ -4,16 +4,7 @@ import { useEffect } from 'react';
 export default function CtaSections() {
     useEffect(() => {
       ScrollReveal().reveal('.scroll-effect-testimonials-text', {
-        origin: 'left',
-        distance: '20px',
-        duration: 1000,
-        delay: 220,
-        easing: 'ease-in-out',
-        reset: true,
-      });
-
-      ScrollReveal().reveal('.scroll-effect-testimonials-text-btn', {
-        origin: 'bottom',
+        origin: 'right',
         distance: '20px',
         duration: 1000,
         delay: 220,
@@ -25,7 +16,16 @@ export default function CtaSections() {
         origin: 'right',
         distance: '20px',
         duration: 1000,
-        delay: 220,
+        delay: 260,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+      
+      ScrollReveal().reveal('.scroll-effect-testimonials-text-btn', {
+        origin: 'left',
+        distance: '20px',
+        duration: 1500,
+        delay: 300,
         easing: 'ease-in-out',
         reset: true,
       });

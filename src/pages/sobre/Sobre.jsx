@@ -7,158 +7,160 @@ import ScrollReveal from 'scrollreveal';
 
 const Sobre = () => {
   useEffect(() => {
-    ScrollReveal().reveal('.scroll-effect-title1', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 220,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+    setTimeout(() => {
+      ScrollReveal().reveal('.scroll-effect-title1', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-title2', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 220,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-title2', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-title3', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 220,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-title3', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-title4', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 220,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-title4', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-title5', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 220,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-title5', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-title6', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 220,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-title6', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 220,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-subtitle1', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-subtitle1', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-subtitle2', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-subtitle2', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-subtitle3', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-subtitle3', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-subtitle4', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-subtitle4', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-subtitle5', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-subtitle5', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-subtitle6', {
-      origin: 'top',
-      distance: '20px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-subtitle6', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-img1', {
-      origin: 'left',
-      distance: '200px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-img1', {
+        origin: 'left',
+        distance: '200px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-img2', {
-      origin: 'left',
-      distance: '200px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-img2', {
+        origin: 'left',
+        distance: '200px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-btn', {
-      origin: 'bottom',
-      distance: '200px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-btn', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-ctn-principios', {
-      origin: 'left',
-      distance: '200px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-ctn-principios', {
+        origin: 'left',
+        distance: '200px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
 
-    ScrollReveal().reveal('.scroll-effect-ctn-compromisso-consideracao', {
-      origin: 'right',
-      distance: '200px',
-      duration: 1000,
-      delay: 300,
-      easing: 'ease-in-out',
-      reset: true,
-    });
+      ScrollReveal().reveal('.scroll-effect-ctn-compromisso-consideracao', {
+        origin: 'right',
+        distance: '200px',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out',
+        reset: true,
+      });
+    }, 500);
   }, []);
   
   return (

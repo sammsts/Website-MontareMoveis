@@ -20,24 +20,24 @@ const links = [
         origin: 'top',
         distance: '20px',
         duration: 1000,
-        delay: 220,
+        delay: 140,
         easing: 'ease-in-out',
         reset: true,
       });
       
       ScrollReveal().reveal('.scroll-effect-headersection-tags', {
-        origin: 'left',
+        origin: 'top',
         distance: '20px',
-        duration: 1000,
-        delay: 220,
+        duration: 1500,
+        delay: 140,
         easing: 'ease-in-out',
         reset: true,
       });
   
       ScrollReveal().reveal('.scroll-effect-headersection-info', {
-        origin: 'right',
+        origin: 'top',
         distance: '20px',
-        duration: 1000,
+        duration: 2000,
         delay: 300,
         easing: 'ease-in-out',
         reset: true,

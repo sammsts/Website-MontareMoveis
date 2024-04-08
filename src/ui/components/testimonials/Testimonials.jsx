@@ -14,10 +14,10 @@ export default function Testimonials() {
       });
       
       ScrollReveal().reveal('.scroll-effect-testimonials-text', {
-        origin: 'right',
+        origin: 'left',
         distance: '20px',
-        duration: 1000,
-        delay: 220,
+        duration: 1500,
+        delay: 250,
         easing: 'ease-in-out',
         reset: true,
       });
