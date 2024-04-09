@@ -10,7 +10,7 @@ export default function ContactForm() {
           duration: 1000,
           delay: 220,
           easing: 'ease-in-out',
-          reset: true,
+          reset: false,
         });
     
         ScrollReveal().reveal('.scroll-effect-contactform-btn', {
@@ -19,7 +19,7 @@ export default function ContactForm() {
           duration: 1000,
           delay: 220,
           easing: 'ease-in-out',
-          reset: true,
+          reset: false,
         });
       }, []);
 

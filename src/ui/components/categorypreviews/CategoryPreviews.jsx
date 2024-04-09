@@ -26,7 +26,7 @@ const callouts = [
         duration: 1000,
         delay: 220,
         easing: 'ease-in-out',
-        reset: true,
+        reset: false,
       });
       
       ScrollReveal().reveal('.scroll-effect-fabricacoes-img', {
@@ -35,7 +35,7 @@ const callouts = [
         duration: 1000,
         delay: 220,
         easing: 'ease-in-out',
-        reset: true,
+        reset: false,
       });
     }, []);
 
