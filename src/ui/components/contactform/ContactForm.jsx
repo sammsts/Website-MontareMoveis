@@ -1,63 +1,197 @@
+import './style.css';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import ScrollReveal from 'scrollreveal';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Dialogs from '../dialogs/Dialogs';
 
 export default function ContactForm() {
+    const [showDialog, setShowDialog] = useState(false);
+    const [showDialogObj, setShowDialogObj] = useState({
+        success: false
+    });
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        company: '',
+        email: '',
+        phoneNumber: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const validFields = fieldsIsValid();
+
+            if (validFields) {
+                const options = {
+                    publicKey: process.env.REACT_APP_EMAILJS_PUBLICKEY,
+                    blockHeadless: true,
+                    limitRate: {
+                        id: 'app',
+                        throttle: 10000,
+                    },
+                }
+
+                const templateParams = {
+                    from_name: formData.firstName,
+                    last_name: formData.lastName,
+                    company: formData.company,
+                    email: formData.email,
+                    phoneNumber: formData.phoneNumber,
+                    message: formData.message
+                }
+
+                emailjs.send(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID, templateParams, options).then(
+                    (response) => {
+                        setFormData({
+                            firstName: '',
+                            lastName: '',
+                            company: '',
+                            email: '',
+                            phoneNumber: '',
+                            message: ''
+                        });
+
+                        document.querySelectorAll('input').forEach((inputElement) => {
+                            inputElement.value = '';
+                        });
+
+                        document.querySelector('#message').value = ''
+                        
+                        setShowDialog(true);
+                        setShowDialogObj({
+                            ...showDialogObj,
+                            success: true
+                        });
+                    },
+                    (error) => {
+                        console.error('FAILED...', error);
+                    },
+                );
+            } else {
+                setShowDialog(false);
+            }
+        } catch (error) {
+            console.error('Erro ao enviar o e-mail:', error);
+
+            setShowDialog(true);
+            setShowDialogObj({
+                ...showDialogObj,
+                success: false
+            });
+        }
+    };
+
+    const fieldsIsValid = () => {
+        let valid = true;
+
+        for (let errorText of document.querySelector('.form').querySelectorAll('.error-text')) {
+            errorText.remove();
+        }
+
+        for (let campo of document.querySelector('.form').querySelectorAll('.validation')) {
+            const label = campo.name;
+            let labelText;
+
+            switch (label) {
+                case 'firstName':
+                    labelText = 'Primeiro Nome';
+                    break;
+                case 'email':
+                    labelText = 'Email';
+                    break;
+                case 'phoneNumber':
+                    labelText = 'Número para contato';
+                    break;
+                case 'message':
+                    labelText = 'Mensagem';
+                    break;
+                default:
+                    labelText = label;
+            }
+
+            if (!campo.value) {
+                createError(campo, `campo "${labelText}" não pode estar vazio.`)
+                valid = false;
+            }
+        }
+
+        return valid;
+    };
+
+    const createError = (campo, msg) => {
+        const div = document.createElement('div');
+
+        div.innerHTML = msg;
+        div.classList.add('error-text');
+
+        campo.insertAdjacentElement('afterend', div);
+    }
+
     useEffect(() => {
         ScrollReveal().reveal('.scroll-effect-contactform-txt', {
-          origin: 'top',
-          distance: '20px',
-          duration: 1000,
-          delay: 220,
-          easing: 'ease-in-out',
-          reset: false,
+            origin: 'top',
+            distance: '20px',
+            duration: 1000,
+            delay: 220,
+            easing: 'ease-in-out',
+            reset: false,
         });
-    
+
         ScrollReveal().reveal('.scroll-effect-contactform-btn', {
-          origin: 'bottom',
-          distance: '20px',
-          duration: 1000,
-          delay: 220,
-          easing: 'ease-in-out',
-          reset: false,
+            origin: 'bottom',
+            distance: '20px',
+            duration: 1000,
+            delay: 220,
+            easing: 'ease-in-out',
+            reset: false,
         });
-      }, []);
+    }, []);
 
     return (
         <div className="px-6 py-24 sm:py-32 lg:px-8">
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
-            <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
             <div className="scroll-effect-contactform-txt mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contate-nos</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
                     Entre em contato conosco nos enviando uma mensagem.
                 </p>
             </div>
-            <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form action="#" method="POST" className="form mx-auto mt-16 max-w-xl sm:mt-20" onSubmit={handleSubmit} onChange={handleChange}>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
-                        <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                        <label htmlFor="firstName" className="block text-sm font-semibold leading-6 text-gray-900">
                             Primeiro nome
                         </label>
                         <div className="mt-2.5">
                             <input
                                 type="text"
-                                name="first-name"
-                                id="first-name"
+                                name="firstName"
+                                id="firstName"
                                 autoComplete="given-name"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                className="validation block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
                     <div>
-                        <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                        <label htmlFor="lastName" className="block text-sm font-semibold leading-6 text-gray-900">
                             Sobrenome
                         </label>
                         <div className="mt-2.5">
                             <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="lastName"
+                                id="lastName"
                                 autoComplete="family-name"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             />
@@ -87,12 +221,12 @@ export default function ContactForm() {
                                 name="email"
                                 id="email"
                                 autoComplete="email"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                className="validation block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                        <label htmlFor="phoneNumber" className="block text-sm font-semibold leading-6 text-gray-900">
                             Número de telefone
                         </label>
                         <div className="relative mt-2.5">
@@ -117,10 +251,10 @@ export default function ContactForm() {
                             </div>
                             <input
                                 type="tel"
-                                name="phone-number"
-                                id="phone-number"
+                                name="phoneNumber"
+                                id="phoneNumber"
                                 autoComplete="tel"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                className="validation block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -133,7 +267,7 @@ export default function ContactForm() {
                                 name="message"
                                 id="message"
                                 rows={4}
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                className="validation block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 defaultValue={''}
                             />
                         </div>
@@ -147,6 +281,7 @@ export default function ContactForm() {
                         Enviar
                     </button>
                 </div>
+                {showDialog && <Dialogs data={showDialogObj} />}
             </form>
         </div>
     )

@@ -31,9 +31,6 @@ const Footer = ({ yearFooter }) => {
 						<FooterLink href="dadospublicos">
 							Dados públicos
 						</FooterLink>
-						<FooterLink href="informacoes">
-							Informações
-						</FooterLink>
 						<FooterLink href="parceiros">
 							Parceiros
 						</FooterLink>
@@ -43,19 +40,10 @@ const Footer = ({ yearFooter }) => {
 						<FooterLink href="fabricacoes">
 							Fabricações
 						</FooterLink>
-						<FooterLink href="montagens">
-							Montagens
-						</FooterLink>
-						<FooterLink href="manutencao">
-							Manutenção
-						</FooterLink>
-						<FooterLink href="restauracao">
-							Restauração
-						</FooterLink>
 					</Column>
 					<Column>
 						<Heading>Contate-nos</Heading>
-						<FooterLink href="trabalheconosco">
+						<FooterLink href="contato">
 							Trabalhe conosco
 						</FooterLink>
 						<FooterLink href="https://api.whatsapp.com/send?1=pt_BR&phone=5555996838296" target="_blank">
