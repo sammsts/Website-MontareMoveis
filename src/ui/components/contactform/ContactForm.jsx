@@ -1,11 +1,13 @@
 import './style.css';
+import { useEffect, useState } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import ScrollReveal from 'scrollreveal';
-import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Dialogs from '../dialogs/Dialogs';
+import Dialogs from '../dialogs/Dialogs.jsx';
+import LoaderEmail from '../loaderemail/LoaderEmail.jsx';
 
 export default function ContactForm() {
+    const [showLoaderEmail, setShowLoaderEmail] = useState(false);
     const [showDialog, setShowDialog] = useState(false);
     const [showDialogObj, setShowDialogObj] = useState({
         success: false
@@ -52,6 +54,8 @@ export default function ContactForm() {
                     message: formData.message
                 }
 
+                setShowLoaderEmail(true);
+
                 emailjs.send(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID, templateParams, options).then(
                     (response) => {
                         setFormData({
@@ -70,12 +74,18 @@ export default function ContactForm() {
                         document.querySelector('#message').value = ''
                         
                         setShowDialog(true);
+                        setShowLoaderEmail(false);
                         setShowDialogObj({
                             ...showDialogObj,
                             success: true
                         });
                     },
                     (error) => {
+                        setShowDialog(true);
+                        setShowDialogObj({
+                            ...showDialogObj,
+                            success: false
+                        });
                         console.error('FAILED...', error);
                     },
                 );
@@ -283,6 +293,7 @@ export default function ContactForm() {
                 </div>
                 {showDialog && <Dialogs data={showDialogObj} />}
             </form>
+            {showLoaderEmail && <LoaderEmail />}
         </div>
     )
 }

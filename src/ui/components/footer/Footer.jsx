@@ -49,7 +49,7 @@ const Footer = ({ yearFooter }) => {
 						<FooterLink href="https://api.whatsapp.com/send?1=pt_BR&phone=5555996838296" target="_blank">
 							Whatsapp
 						</FooterLink>
-						<FooterLink href="mailto:joaonetodossantos44@gmail.com">
+						<FooterLink href="mailto:montaremoveisfm@gmail.com">
 							Email
 						</FooterLink>
 					</Column>
