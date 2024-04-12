@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Montare Móveis - Fabricações e Montagens
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Status: Developed ✅
+>
+> [![Netlify Status](https://api.netlify.com/api/v1/badges/fac93ca3-0673-4160-aaa4-f3464264cf04/deploy-status)](https://app.netlify.com/sites/montaremoveis/deploys)
 
-## Available Scripts
+<table>
+  <tr>
+    <td>
+      Este é o repositório do website da Montare Móveis, uma empresa de marcenaria especializada na fabricação e montagem de móveis planejados. O website foi desenvolvido utilizando ReactJS com o auxílio do Tailwind CSS para estilização e componentes reutilizáveis do Tailwind Components. Além disso, a aplicação utiliza as APIs do Meta for Developers para informações de metadados e do EmailJS para envio de emails.
+    </td>
+    <td><img style="width: 1000px" src="https://github.com/sammsts/Website-MontareMoveis/assets/100657343/641575d9-9b1c-4a9c-9d4b-fb982498f781"></td>
+  </tr>
+</table>
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Página Inicial**: Apresenta uma visão geral da empresa, seus serviços e alguns de seus projetos recentes.
+- **Fabricações**: Exibe uma galeria de fotos e vídeos dos móveis planejados fabricados pela Montare Móveis.
+- **Contato**: Formulário de contato para os usuários entrarem em contato com a empresa.
+- **Sobre**: Seção com informações sobre a empresa.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ReactJS
+- Tailwind CSS
+- Tailwind Components
+- React Router DOM
+- Meta for Developers API
+- EmailJS
 
-### `npm test`
+## Deploy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O website foi implantado na Netlify e pode ser acessado através do seguinte link: [Montare Móveis](https://montaremoveis.netlify.app)
