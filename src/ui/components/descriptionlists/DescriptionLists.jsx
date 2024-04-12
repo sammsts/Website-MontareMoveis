@@ -7,7 +7,7 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 export default function DescriptionLists() {
   return (
-    <div className="px-0 sm:px-20">
+    <div className="px-0 pt-20 sm:px-20">
       <div className="px-4 sm:px-0">
         <h3 className="text-base font-semibold leading-7 text-gray-900">Informações sobre a empresa</h3>
         <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Dados públicos</p>
@@ -38,7 +38,7 @@ export default function DescriptionLists() {
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm font-medium leading-6 text-gray-900">Situação</dt>
-            <dd className="mt-1 w-12 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+            <dd className="w-12 leading-5 text-gray-700 sm:col-span-2 sm:mt-0 rounded-md bg-green-50 text-center py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
               Ativa
             </dd>
           </div>
