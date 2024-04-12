@@ -7,20 +7,20 @@
 <table>
   <tr>
     <td>
-      Este é o repositório do website da Montare Móveis, uma empresa de marcenaria especializada na fabricação e montagem de móveis planejados. O website foi desenvolvido utilizando ReactJS com o auxílio do Tailwind CSS para estilização e componentes reutilizáveis do Tailwind Components. Além disso, a aplicação utiliza as APIs do Meta for Developers para informações de metadados e do EmailJS para envio de emails.
+      This is the website repository for Montare Móveis, a carpentry company specializing in the manufacture and assembly of custom furniture. The website was developed using ReactJS with the help of Tailwind CSS for styling and reusable components from Tailwind Components. Additionally, the application uses the Meta for Developers APIs for metadata information and EmailJS for sending emails.
     </td>
     <td><img style="width: 1000px" src="https://github.com/sammsts/Website-MontareMoveis/assets/100657343/641575d9-9b1c-4a9c-9d4b-fb982498f781"></td>
   </tr>
 </table>
 
-## Funcionalidades
+## Functionalities
 
-- **Página Inicial**: Apresenta uma visão geral da empresa, seus serviços e alguns de seus projetos recentes.
-- **Fabricações**: Exibe uma galeria de fotos e vídeos dos móveis planejados fabricados pela Montare Móveis.
-- **Contato**: Formulário de contato para os usuários entrarem em contato com a empresa.
-- **Sobre**: Seção com informações sobre a empresa.
+- **Home Page**: Presents an overview of the company, its services and some of its recent projects.
+- **Fabrications**: Displays a gallery of photos and videos of custom furniture manufactured by Montare Móveis.
+- **Contact**: Contact form for users to get in touch with the company.
+- **About**: Section with information about the company.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - ReactJS
 - Tailwind CSS
@@ -31,4 +31,4 @@
 
 ## Deploy
 
-O website foi implantado na Netlify e pode ser acessado através do seguinte link: [Montare Móveis](https://montaremoveis.netlify.app)
+The website was implemented on Netlify and can be accessed through the following link: [Montare Móveis](https://montaremoveis.netlify.app)
